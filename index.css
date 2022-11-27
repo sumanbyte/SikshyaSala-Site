@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* webkit scroll bar  */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+li a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+
+
+.navbar-container {
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+}
+
+.navbar-container nav {
+    height: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.229);
+}
+
+.sikshyasala-logo {}
+
+.navbar-container header {
+    width: inherit;
+    height: 90px;
+    /* background-color: blue; */
+    margin: 0 1rem;
+}
+
+.main-content {
+    /* height: calc(100vh - 100px); */
+    /* background-color: green; */
+    
+}
+
+.default-margin-bottom {
+    margin-bottom: 3rem;
+}
+
+.sub-main-content {
+    /* min-height: 30vh; */
+}
+
+.navigation-search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-search-bar-input {
+    max-width: 1000px;
+    width: 30vw;
+    height: 40px;
+
+}
+.user-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.home img{
+    cursor: pointer;
+    width: 30px;
+}
+
+.bell img{
+    cursor: pointer;
+    width: 25px;
+}
+
+.user img{
+    cursor: pointer;
+    width: 25px;
+}
+
+
+.main-content-container{
+    /* padding: 3rem; */
+    display: flex;
+    justify-content: center;
+}
+
+.main-content-container > div{
+    margin: 4rem 2rem;
+}
+
+.main-content-bannerimg img{
+    /* width: 300px; */
+}
+
+.categories{
+    /* width: 30%; */
+}
+
+#carouselExampleControls{
+    background-color: red;
+}
+
+#carouselExampleControls img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* feature section  */
+.sub-main-content{
+    /* height: 100vh; */
+    
+}
+.feature-section-items{
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 30vh; */
+    /* flex-direction: row; */
+}
+
+.feature-section-item{
+    cursor: pointer;
+    max-width: 400px;
+    height: auto;
+}
+
+.feature-section-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature-section-item img{
+    width: 7rem;
+    height: auto;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: blue;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.6rem;
+}
+
+.footer-container > div{
+    width: 30%;
+    color: white;
+}
+
+.footer-content-items{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+/* 
+.footer-content-item{
+    display: flex;
+} */
+
+.copyright-section{
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+
+.bars, .xmark{
+    z-index: 6666;
+}
+.bars i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    display: none;
+}
+
+
+.xmark i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    display: none;
+}
+
+.hamburgerMenu{
+    position: fixed;
+    top: 0;
+    left:0;
+    padding-top: 150px;
+    height: 100vh;
+    width: 100%;
+    z-index: 5555;
+    color: white;
+    text-align: center;
+    background-color: rgb(176, 176, 228);
+    display: none;
+}
+.hamburgerMenu ul li{
+    margin-top: 30px;
+}
+/* navbar 1075 breakpoint */
+
+@media screen  and (max-width: 1040px){
+   
+    .categories{
+        display: none;
+    }
+
+    .bars i{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 880px){
+    .user-navigation{
+        display: none;
+    }
+    .navigation-search-bar-input {
+        max-width: 1000px;
+        width: 40vw;
+        height: 40px;
+    
+    }
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6rem;
+        flex-direction: column;
+    }
+
+    .footer-container > div{
+        width: 100%;
+    }
+
+    .bars i{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 698px){
+    .navbar-container nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navigation-search-bar-input {
+        max-width: 1000px;
+        width: 70vw;
+        height: 40px;
+    
+    }
+
+    .feature-section-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .feature-section-items > div{
+        text-align: center;
+        width: 100%;
+    }
+   
+}
+
+
