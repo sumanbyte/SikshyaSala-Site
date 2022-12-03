@@ -36,11 +36,17 @@ li{
 }
 
 .navbar-container nav {
+    
     height: inherit;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-around; */
     align-items: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.229);
+}
+
+.navbar-container nav > div{
+    
+    margin: 0 4rem;
 }
 
 .sikshyasala-logo {}
@@ -107,7 +113,7 @@ li{
 }
 
 .main-content-container > div{
-    margin: 4rem 2rem;
+    margin: 4rem 4rem;
 }
 
 .main-content-bannerimg img{
@@ -116,6 +122,7 @@ li{
 
 .categories{
     /* width: 30%; */
+    
 }
 
 #carouselExampleControls{
@@ -230,7 +237,15 @@ footer {
 /* navbar 1075 breakpoint */
 
 @media screen  and (max-width: 1040px){
+
+    .navbar-container nav > div {
+        margin: 0 2rem;
+      }
    
+      .main-content-container > div {
+        margin: 1.5rem;
+      }
+
     .categories{
         display: none;
     }
@@ -269,6 +284,20 @@ footer {
 }
 
 @media screen and (max-width: 698px){
+    nav .sikshyasala-logo{
+        padding-bottom: 5px;
+    }
+    .navbar-container nav {
+        padding: 0;
+      }
+
+      .navbar-container nav > div {
+        margin: 0 ;
+      }
+
+      .main-content-container > div {
+        margin: .5rem;
+      }
     .navbar-container nav{
         flex-direction: column;
         align-items: flex-start;
