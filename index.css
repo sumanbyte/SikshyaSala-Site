@@ -215,6 +215,7 @@ footer {
     top: 10px;
     font-size: 25px;
     display: none;
+    z-index: 99999999999;
 }
 
 .hamburgerMenu{
@@ -224,7 +225,7 @@ footer {
     padding-top: 150px;
     height: 100vh;
     width: 100%;
-    z-index: 5555;
+    z-index: 555599999999;
     color: white;
     text-align: center;
     background-color: rgb(176, 176, 228);
@@ -233,6 +234,88 @@ footer {
 .hamburgerMenu ul li{
     margin-top: 30px;
 }
+
+
+
+
+
+.most-viewed{
+    padding: 0 2.5rem;
+}
+
+.most-viewed .most-viewed-items{
+    border: 1px solid green;
+}
+
+
+.most-viewed .most-viewed-items .most-viewed-item{
+    display: inline-block;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 2px solid black;
+}
+
+.most-viewed .most-viewed-items .most-viewed-item h4{
+    margin-top: 1.2rem;
+}
+
+.most-viewed .most-viewed-items .most-viewed-seemore{
+    position: absolute;
+    right: 2.5rem;
+    
+}
+
+/* .max-width-1{
+    max-width: 90vw;
+    margin: auto;
+} */
+
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content-center{
+    align-items: center;
+}
+
+.items-center{
+    justify-content: center;
+}  
+
+@media screen and (max-width: 1090px){
+
+    .most-viewed .most-viewed-items {
+        text-align: center;
+    }
+    
+
+.navbar-container nav > div {
+    margin: 0 2rem;
+}
+
+.main-content-container > div {
+    margin: 4rem 2rem;
+}
+
+.most-viewed {
+    padding: 0 2rem;
+}
+
+}
+
+
+
+
+
 /* navbar 1075 breakpoint */
 
 @media screen  and (max-width: 1040px){
@@ -256,6 +339,16 @@ footer {
 }
 
 @media screen and (max-width: 880px){
+
+    .most-viewed .most-viewed-items .most-viewed-item img{
+        width: 150px;
+    }
+
+    .most-viewed .most-viewed-items .most-viewed-seemore {
+        position: absolute;
+        right: 2.5rem;
+        
+    }
     .user-navigation{
         display: none;
     }
@@ -283,6 +376,9 @@ footer {
 }
 
 @media screen and (max-width: 698px){
+    .most-viewed {
+        padding: 0 1rem;
+    }
     nav .sikshyasala-logo{
         padding-bottom: 5px;
     }
